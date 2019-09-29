@@ -37,8 +37,8 @@ public final class HeavenlyBody {
             return true;
         }
 
-        System.out.println("obj.getClass() is: " + obj.getClass());
-        System.out.println("this.getClass() is: " + this.getClass());
+        System.out.println("obj.getClass() is: " + obj.getClass().getSimpleName());
+        System.out.println("this.getClass() is: " + this.getClass().getSimpleName());
 
         if (obj == null || getClass() != obj.getClass()) return false;
         HeavenlyBody that = (HeavenlyBody) obj;
@@ -56,6 +56,7 @@ public final class HeavenlyBody {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name);
+        System.out.println("hashcode called by: " + getName());
+        return Objects.hash(name) + 57;
     }
 }
