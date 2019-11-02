@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--заголовок страницы-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="uk"/>
+    <!--указание языка, на которой написана страничка-->
+    <title>самый лучший сайт по поиску работы</title><!--титул страницы-->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+<header class="header_default">
+    <table>
+        <tr heigh="10">
+            <td>
+                <a class="navbar" href="job_main_page.html"><h1>Работа</h1></a>
+            </td>
+            <td>
+                <a class="navbar" href="#"><h1>Разместить вакансию</h1></a>
+            </td>
+            <td>
+                <a class="navbar" href="#"><h1>Разместить резюме</h1></a>
+            </td>
+            <td>
+                <a class="navbar" href="#"><h1>Войти</h1></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input class="navbar" type="text" placeholder="Запрос"/>
+            </td>
+            <td>
+                <select class="navbar">
+                    <option>Киев</option>
+                    <option>Оесса</option>
+                    <option>Львов</option>
+                    <option>Донецк</option>
+                    <option>Харьков</option>
+                    <option>Ивано-Франковск</option>
+                </select>
+            </td>
+            <td>
+                <a class="navbar" href="https://www.google.com/search?q=вакансии"><h1>Найти вакансии</h1></a>
+            </td>
+        </tr>
+    </table>
+</header>
+<!-- content begins -->
+
+
+<div id="center">
+    <h3>Регистрационная форма</h3>
+
+    <form action="#" id='send' method='GET'>
+        <fieldset>
+            <label>Имя</label>
+            <input type='text' name='name' placeholder='Имя' required><span></span>
+            <br>
+            <label>Фамилия</label>
+            <input type='text' name='surname' placeholder='Фамилия' required><span></span>
+            <br>
+            <label>Город</label>
+            <input type='text' name='city' placeholder='Город' required><span></span>
+            <br>
+        </fieldset>
+        <fieldset>
+            <label>Эл. почта</label>
+            <input type='email' name='email' placeholder='Эл. почта' required><span></span>
+            <br>
+            <label>Пароль</label>
+            <input type='password' name='pass' placeholder='Пароль' required><span></span>
+            <br>
+            <label>Повторите</label>
+            <input type='password' name='repeat' placeholder='Повторите' required><span></span>
+            <br>
+        </fieldset>
+        <fieldset>
+            <p>Введите буквы с картинки</p>
+            <img src="https://c22blog.files.wordpress.com/2010/10/input-black.gif">
+            <input type='text' name='capcha' placeholder='буквы' required><span></span>
+        </fieldset>
+        <input type="submit" value="Зарегистрироваться" form='send'>
+    </form>
+
+</div>
+
+
+<div style="clear: both"></div>
+<!-- content ends -->
+
+
+<footer>
+    Лабораторная работа Воеводина Андрея. 2019г.
+</footer>
+</body>
+</html>
